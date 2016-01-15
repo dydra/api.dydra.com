@@ -53,7 +53,7 @@ master_doc = 'index'
 # General information about the project.
 project = u'Dydra API'
 #copyright = None
-author = u'Arto Bendiken'
+author = u'Datagraph GmbH'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
