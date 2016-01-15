@@ -1,4 +1,6 @@
 .. index:: pair: XSLT; post-processing
+.. index:: standards; XPath 2.0
+.. index:: standards; XSLT 2.0
 
 XSLT Post-Processing
 ====================

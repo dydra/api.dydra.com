@@ -1,4 +1,5 @@
 .. index:: pair: SPARQL; federation
+.. index:: standards; SPARQL 1.1 Federated Query
 
 Federation
 ==========

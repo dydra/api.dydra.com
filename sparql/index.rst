@@ -1,4 +1,8 @@
 .. index:: ! SPARQL; protocol
+.. index:: standards; SPARQL 1.1 Graph Store HTTP Protocol
+.. index:: standards; SPARQL 1.1 Protocol
+.. index:: standards; SPARQL 1.1 Query
+.. index:: standards; SPARQL 1.1 Update
 
 *****************************
 SPARQL 1.1 Protocol Interface
