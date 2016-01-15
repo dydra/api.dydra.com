@@ -191,5 +191,13 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-publish: $(BUILDDIR)/html
+publish-html: $(BUILDDIR)/html
 	rsync -azv $(BUILDDIR)/html/ dydra@api.dydra.com:sites/api.dydra.com/
+
+publish-pdf: $(BUILDDIR)/latex
+	rsync -azv $(BUILDDIR)/latex/dydra-api.pdf dydra@api.dydra.com:sites/api.dydra.com/download/
+
+publish-epub: $(BUILDDIR)/epub
+	rsync -azv $(BUILDDIR)/epub/DydraAPI.epub dydra@api.dydra.com:sites/api.dydra.com/download/dydra-api.epub
+
+publish: publish-html
