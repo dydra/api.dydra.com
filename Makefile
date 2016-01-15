@@ -198,6 +198,6 @@ publish-pdf: $(BUILDDIR)/latex
 	rsync -azv $(BUILDDIR)/latex/dydra-api.pdf dydra@api.dydra.com:sites/api.dydra.com/download/
 
 publish-epub: $(BUILDDIR)/epub
-	rsync -azv $(BUILDDIR)/epub/DydraAPI.epub dydra@api.dydra.com:sites/api.dydra.com/download/dydra-api.epub
+	rsync -azv $(BUILDDIR)/epub/dydra-api.epub dydra@api.dydra.com:sites/api.dydra.com/download/
 
 publish: publish-html

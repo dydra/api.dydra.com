@@ -23,6 +23,7 @@ Building the Manual
 
    $ make html      # HTML output in .build/html/index.html
    $ make latexpdf  # PDF output in .build/latex/dydra-api.pdf
+   $ make epub      # EPUB output in .build/epub/dydra-api.epub
 
 Publishing the Manual
 =====================
