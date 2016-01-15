@@ -1,3 +1,5 @@
+.. index:: ! SPARQL; protocol
+
 *****************************
 SPARQL 1.1 Protocol Interface
 *****************************

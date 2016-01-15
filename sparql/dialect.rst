@@ -1,3 +1,7 @@
+.. index:: pair: SPARQL; functions
+.. index:: pair: SPARQL; semantics
+.. index:: pair: SPARQL; syntax
+
 Dydra's SPARQL Dialect
 ======================
 

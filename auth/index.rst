@@ -1,3 +1,6 @@
+.. index:: ! authentication
+.. index:: single: authentication; token
+
 **************
 Authentication
 **************
