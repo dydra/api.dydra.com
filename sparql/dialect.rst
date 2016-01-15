@@ -8,7 +8,7 @@ Dydra's SPARQL Dialect
 Like all SPARQL implementations, Dydra's has some quirks. Unlike all SPARQL
 implementations, our canonical description comprises a `BNF
 <http://docs.dydra.com/api/sparql_bnf>`__ and `a set of executable tests
-<http://github.com/dydra/sparql-tests>`__, written in `RSpec
+<https://github.com/dydra/sparql-tests>`__, written in `RSpec
 <http://rspec.info/>`__.
 
 Features
@@ -38,7 +38,7 @@ Dydra is a graph store (as opposed to a document store). We store the
 semantic representations of numerics, dates, and times. The result is that
 several of these formats do not round-trip. For example, data imported as
 ``"01"^^XSD.integer`` would be returned as ``"1"^^XSD.integer``. See the
-`Dydra reference tests <http://github.com/dydra/sparql-tests>`__ for more
+`Dydra reference tests <https://github.com/dydra/sparql-tests>`__ for more
 detail.
 
 Short Forms
