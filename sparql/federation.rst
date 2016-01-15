@@ -34,7 +34,24 @@ The default mode for a query is specified in the initial system
 configuration. Each individual query may specify its own mode, subject to
 constraints
 
-.. todo:: table from http://docs.dydra.com/federation
++--------------------------+-------------------------+--------------------------+
+| Mode                     | Effect                  | Permitted Variations     |
++==========================+=========================+==========================+
+| ``<urn:dydra:none>``     | Federation is disabled; |                          |
+|                          | ``GRAPH`` forms apply   |                          |
+|                          | to a repository's named |                          |
+|                          | graphs only and any     |                          |
+|                          | ``SERVICE`` forms cause |                          |
+|                          | an error                |                          |
++--------------------------+-------------------------+--------------------------+
+| ``<urn:dydra:internal>`` | Federation is enabled   | ``<urn:dydra:none>``     |
+|                          | for references local to |                          |
+|                          | the host                |                          |
++--------------------------+-------------------------+--------------------------+
+| ``<urn:dydra:external>`` | Federation is enabled   | ``<urn:dydra:none>``,    |
+|                          | for both local and      | ``<urn:dydra:internal>`` |
+|                          | remote references       |                          |
++--------------------------+-------------------------+--------------------------+
 
 Federation Query Forms
 ----------------------
