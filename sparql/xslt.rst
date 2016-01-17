@@ -23,7 +23,7 @@ output of the SPARQL query.
 Execution Pipeline
 ------------------
 
-When the query processor receives a SPARQL protocol request that includes a
+When the query processor receives a SPARQL protocol request that includes an
 ``xsl-stylesheet`` parameter, it initiates a concurrent HTTP request to
 fetch the XSLT stylesheet from the specified URL at the same time as it
 begins processing the SPARQL query itself. This means that the stylesheet is
