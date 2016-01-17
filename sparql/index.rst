@@ -49,6 +49,7 @@ count for the 'jhacker/foaf' repository can be done with ``curl``::
 
    auth
    dialect
+   functions
    federation
    xslt
 
