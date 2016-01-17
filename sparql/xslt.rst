@@ -20,6 +20,13 @@ parameter in the :doc:`SPARQL protocol <index>` request. The value of this
 parameter must be the URL of the XSLT stylesheet to apply to the RDF/XML
 output of the SPARQL query.
 
+::
+
+   $ curl -H 'Accept: application/rdf+xml'            \
+          -H 'Content-Type: application/sparql-query' \
+          -d 'CONSTRUCT * WHERE {?s ?p ?o} LIMIT 10'  \
+          -X POST http://dydra.com/jhacker/foaf/sparql?xsl-stylesheet=http://example.org/transform.xsl
+
 Execution Pipeline
 ------------------
 
