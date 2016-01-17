@@ -43,13 +43,6 @@ SPARQL Views
 XSLT post-processing is also supported for SPARQL views, in a similar
 manner. Please refer to the :doc:`../views/index` chapter for particulars.
 
-Local Testing
--------------
-
-::
-
-   $ xqilla -s stylesheet.xsl -i query-result.rdf
-
 Known Caveats
 -------------
 
@@ -99,3 +92,30 @@ circumstance; please `report a bug
 <https://github.com/dydra/support/issues>`__ in case you've conclusively
 verified that an error should be output but are receiving an empty response
 instead.
+
+Local Testing
+-------------
+
+For quicker development iteration and/or troubleshooting, it can be helpful
+to run the XSLT transform locally using the same XSLT processor as Dydra
+uses--namely, XQilla.
+
+The processor binaries are available prepackaged on Mac OS X (via Homebrew
+or MacPorts) as well as on most Linux distributions (e.g., Ubuntu).
+Windows users will need to build XQilla from source per `instructions
+<http://xqilla.sourceforge.net/WindowsBuild?show_comments=1>`__ provided on
+the project's wiki.
+
+Once you do have the :program:`xqilla` program binary available locally,
+you can execute an XSLT transform as follows::
+
+   $ xqilla -s stylesheet.xsl -i query-result.rdf
+
+In the above example, the file :file:`query-result.rdf` would contain the
+saved RDF/XML output from your SPARQL query, to be fed into the XSLT
+processor.
+
+XQilla produces its output on the standard output stream (``stdout``),
+meaning that you can capture the output using a shell pipe redirection::
+
+   $ xqilla -s stylesheet.xsl -i query-result.rdf > output.xml
