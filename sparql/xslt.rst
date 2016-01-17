@@ -10,9 +10,9 @@ server-side post-processing of SPARQL query results based on a user-supplied
 XSLT stylesheet.
 
 This feature is currently supported for the RDF/XML output of ``CONSTRUCT``
-and ``DESCRIBE`` queries.
+and ``DESCRIBE`` queries only.
 
-Activation Parameter
+Activation Condition
 --------------------
 
 XSLT post-processing is activated by including an ``xsl-stylesheet`` URL
@@ -79,3 +79,16 @@ The following XSLT 2.0 features are not supported at this time:
 * ``xsl:strip-space``
 * ``@validation`` & ``@type``
 * ``@priority``
+
+Error Reporting
+^^^^^^^^^^^^^^^
+
+In case the user's XSLT stylesheet does not match anything, empty output
+will be produced and returned with an HTTP `200 OK` response.
+
+In case the user's XSLT stylesheet produces an error, an HTTP `4xx` client
+error response should be produced. At present this does not happen in every
+circumstance; please `report a bug
+<https://github.com/dydra/support/issues>`__ in case you've conclusively
+verified that an error should be output but are receiving an empty response
+instead.
