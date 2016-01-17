@@ -27,3 +27,8 @@ Glossary
    SDK
 
      Software Development Kit.
+
+   XSLT
+
+     XSLT (Extensible Stylesheet Language Transformations) is a language for
+     transforming XML documents into other XML documents.
