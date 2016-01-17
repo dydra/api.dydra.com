@@ -12,15 +12,29 @@ XSLT stylesheet.
 This feature is currently supported for the RDF/XML output of ``CONSTRUCT``
 and ``DESCRIBE`` queries.
 
-.. todo:: To be detailed.
+Activation Parameter
+--------------------
 
 XSLT post-processing is activated by including an ``xsl-stylesheet`` URL
-parameter in the :doc:`SPARQL Protocol <index>` request. The value of this
+parameter in the :doc:`SPARQL protocol <index>` request. The value of this
 parameter must be the URL of the XSLT stylesheet to apply to the RDF/XML
 output of the SPARQL query.
 
-XSLT post-processing is also supported for :doc:`../views/index`, in a
-similar manner.
+Execution Pipeline
+------------------
+
+When the query processor receives a SPARQL protocol request that includes a
+``xsl-stylesheet`` parameter, it initiates a concurrent HTTP request to
+fetch the XSLT stylesheet from the specified URL at the same time as it
+begins processing the SPARQL query itself. This means that the stylesheet is
+usually available by the time the query results begin streaming out of the
+query processor, and can thus be directly applied to those results.
+
+SPARQL Views
+------------
+
+XSLT post-processing is also supported for SPARQL views, in a similar
+manner. Please refer to the :doc:`../views/index` chapter for particulars.
 
 Known Caveats
 -------------
