@@ -5,7 +5,7 @@
 XSLT Post-Processing
 ====================
 
-Dydra's query engine integrates an XSLT processor pipeline to enable
+Dydra's query engine integrates an XSLT 2.0 processor pipeline to enable
 server-side post-processing of SPARQL query results based on a user-supplied
 XSLT stylesheet.
 
