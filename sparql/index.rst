@@ -23,6 +23,8 @@ count for the 'jhacker/foaf' repository can be done with ``curl``::
           -d 'SELECT COUNT(*) WHERE {?s ?p ?o}'        \
           -X POST http://dydra.com/jhacker/foaf/sparql
 
+::
+
    {
      "head": {
        "vars": [
