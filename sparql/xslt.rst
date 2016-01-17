@@ -14,6 +14,14 @@ and ``DESCRIBE`` queries.
 
 .. todo:: To be detailed.
 
+XSLT post-processing is activated by including an ``xsl-stylesheet`` URL
+parameter in the :doc:`SPARQL Protocol <index>` request. The value of this
+parameter must be the URL of the XSLT stylesheet to apply to the RDF/XML
+output of the SPARQL query.
+
+XSLT post-processing is also supported for :doc:`../views/index`, in a
+similar manner.
+
 Known Caveats
 -------------
 
