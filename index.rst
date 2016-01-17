@@ -18,6 +18,7 @@ and it is also available for download in the `PDF`_ and `EPUB`_ formats.
 
    auth/index
    sparql/index
+   views/index
    history
    glossary
 
