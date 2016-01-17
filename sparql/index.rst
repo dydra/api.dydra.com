@@ -19,12 +19,28 @@ A simple query, which specifies a user identifier and returns a statement
 count for the 'jhacker/foaf' repository can be done with ``curl``::
 
    $ curl -H 'Accept: application/sparql-results+json' \
-           'http://dydra.com/jhacker/foaf/sparql?query=select%20count(*)%20where%20%7b?s%20?p%20?o%7d&user_id=myId'
-   { "head": { "vars": [ "COUNT1" ] },
-      "results": {
-      "bindings": [ { "COUNT1": {"type":"typed-literal",
-                                 "datatype":"http://www.w3.org/2001/XMLSchema#integer",
-                      "value":"10"} } ] } }
+          -H 'Content-Type: application/sparql-query'  \
+          -d 'SELECT COUNT(*) WHERE {?s ?p ?o}'        \
+          -X POST http://dydra.com/jhacker/foaf/sparql
+
+   {
+     "head": {
+       "vars": [
+         "COUNT1"
+       ]
+     },
+     "results": {
+       "bindings": [
+         {
+           "COUNT1": {
+             "type": "literal",
+             "value": "8631",
+             "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+           }
+         }
+       ]
+     }
+   }
 
 .. toctree::
    :maxdepth: 2
