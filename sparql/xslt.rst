@@ -25,7 +25,7 @@ output of the SPARQL query.
    $ curl -H 'Accept: application/rdf+xml'            \
           -H 'Content-Type: application/sparql-query' \
           -d 'CONSTRUCT * WHERE {?s ?p ?o} LIMIT 10'  \
-          -X POST http://dydra.com/jhacker/foaf/sparql?xsl-stylesheet=http://example.org/transform.xsl
+          -X POST http://dydra.com/jhacker/foaf/sparql?xsl-stylesheet=http://example.org/stylesheet.xsl
 
 Execution Pipeline
 ------------------
@@ -42,6 +42,13 @@ SPARQL Views
 
 XSLT post-processing is also supported for SPARQL views, in a similar
 manner. Please refer to the :doc:`../views/index` chapter for particulars.
+
+Local Testing
+-------------
+
+::
+
+   $ xqilla -s stylesheet.xsl -i query-result.rdf
 
 Known Caveats
 -------------
@@ -84,9 +91,9 @@ Error Reporting
 ^^^^^^^^^^^^^^^
 
 In case the user's XSLT stylesheet does not match anything, empty output
-will be produced and returned with an HTTP `200 OK` response.
+will be produced and returned with an HTTP ``200 OK`` response.
 
-In case the user's XSLT stylesheet produces an error, an HTTP `4xx` client
+In case the user's XSLT stylesheet produces an error, an HTTP ``4xx`` client
 error response should be produced. At present this does not happen in every
 circumstance; please `report a bug
 <https://github.com/dydra/support/issues>`__ in case you've conclusively
