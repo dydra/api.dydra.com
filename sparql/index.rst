@@ -51,6 +51,7 @@ count for the 'jhacker/foaf' repository can be done with ``curl``::
    dialect
    functions
    federation
+   revisioning
    xslt
 
 .. _SPARQL 1.0 Protocol: http://www.w3.org/TR/rdf-sparql-protocol/
