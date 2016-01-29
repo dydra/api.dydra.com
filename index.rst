@@ -16,7 +16,7 @@ and it is also available for download in the `PDF`_ and `EPUB`_ formats.
 .. toctree::
    :maxdepth: 2
 
-   auth/index
+   http/index
    sparql/index
    views/index
    history

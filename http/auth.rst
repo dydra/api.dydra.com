@@ -2,9 +2,8 @@
 .. index:: authentication; token
 .. index:: standards; HTTP 1.1
 
-**************
 Authentication
-**************
+==============
 
 .. note::
 
