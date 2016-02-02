@@ -2,6 +2,11 @@
 History
 *******
 
+February 2, 2016
+================
+
+* Documented :doc:`SFTP access <sftp/index>`.
+
 January 29, 2016
 ================
 
