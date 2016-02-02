@@ -19,6 +19,7 @@ and it is also available for download in the `PDF`_ and `EPUB`_ formats.
    http/index
    sparql/index
    views/index
+   sftp/index
    history
    glossary
 
