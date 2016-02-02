@@ -32,6 +32,9 @@ with the following settings:
 * **Username**: *<your Dydra account name>*
 * **Password**: *<your SFTP password>*
 
+.. image:: ../_images/sftp-config-cyberduck.*
+   :alt: Screenshot of configuring Cyberduck to access the Dydra SFTP service
+
 Configuring OpenSSH
 -------------------
 
